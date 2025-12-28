@@ -1,0 +1,13 @@
+{
+  "name": "nome-do-seu-projeto",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Breve descrição do projeto",
+  "main": "index.html",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "latest"
+  }
+}
