@@ -1,8 +1,9 @@
 # 📓 Anotações de Estudo - [Nome da Matéria]
 
 ## 💡 Conceitos Chave
-* **Conceito A:** Explicação rápida do que entendi.
-* **Conceito B:** Observação importante para a prova ou projeto.
+
+- **Conceito A:** Explicação rápida do que entendi.
+- **Conceito B:** Observação importante para a prova ou projeto.
 
 ## 🛠️ Snippets Úteis
 
@@ -16,10 +17,11 @@ console.log(exemplo);
 
 INICIO mermaid
 graph LR
-    A[Requisito] --> B[Desenvolvimento]
-    B --> C[Teste]
-    C --> D[Deploy]
+A[Requisito] --> B[Desenvolvimento]
+B --> C[Teste]
+C --> D[Deploy]
 FIM
 
 ---
-*Última atualização: 28/12/2025*
+
+_Última atualização: 28/12/2025_

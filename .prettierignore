@@ -5,3 +5,6 @@ build
 assets
 *.min.css
 *.min.js
+package.json
+package-lock.json
+LICENSE

@@ -1,7 +1,9 @@
 /* Modern Reset */
 
 /* 1. Define o box-sizing para facilitar o cálculo de tamanhos */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,7 +14,8 @@
 }
 
 /* 3. Melhora a altura e o scroll do corpo */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -22,13 +25,18 @@ body {
 }
 
 /* 4. Faz as imagens serem responsivas por padrão */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 5. Remove estilos de lista e links */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -38,7 +46,10 @@ a {
 }
 
 /* 6. Reseta fontes de formulários (que não herdam o body por padrão) */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
