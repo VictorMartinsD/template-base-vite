@@ -1,9 +1,6 @@
 # --- Dependências ---
 node_modules/
 
-# --- IDE/Editor (VS Code) ---
-.vscode/
-
 # --- Logs e Arquivos de Erro ---
 *.log
 
