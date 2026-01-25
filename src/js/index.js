@@ -1,4 +1,4 @@
-/* PROJETO: [Nome do Projeto]
+/*
   AUTOR: Victor Martins
   DESCRIÇÃO: Script principal para funcionalidades do site.
 */

@@ -4,6 +4,6 @@
   height: 24px;
   display: inline-block;
   vertical-align: middle;
-  color: inherit; /*  Inherit the color from the parent element */
+  color: inherit;
   transition: color 0.2s ease;
 }

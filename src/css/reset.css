@@ -22,6 +22,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 4. Faz as imagens serem responsivas por padrão */
@@ -32,13 +33,18 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* 5. Remove estilos de lista e links */
 ul,
-ol {
+ol,
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
+/* Importante: Use class: role="list" no HTML para manter a acessibilidade no Safari e garantir o reset em navegadores legados.*/
 
 a {
   text-decoration: none;

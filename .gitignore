@@ -14,3 +14,6 @@ Thumbs.db
 # --- Pastas de Compilação/Build ---
 dist/
 build/
+
+# --- Rascunhos ---
+draft.html
