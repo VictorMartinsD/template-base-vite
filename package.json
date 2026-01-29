@@ -6,6 +6,10 @@
   "description": "Breve descrição do projeto",
   "main": "index.html",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "npm run lint && npm run format",
     "format": "prettier --write .",
     "prepare": "husky"
   },
