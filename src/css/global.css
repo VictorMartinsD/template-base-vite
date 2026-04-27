@@ -1,7 +1,13 @@
-/* ---------------------------------------------------------
-   PREVENÇÃO DE FOUC (Flash of Unstyled Content)
-   Garante que o site só apareça após o processamento do Tailwind
-   --------------------------------------------------------- */
+/* Lógica de Carregamento (FOUC) */
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
 body {
   opacity: 0;
 }
