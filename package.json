@@ -17,9 +17,14 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{html,css,js}": "prettier --write"
+    "**/*.{html,css}": "prettier --write",
+    "**/*.js": ["eslint --fix", "prettier --write"]
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "latest",
