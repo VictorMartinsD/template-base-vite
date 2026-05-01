@@ -14,8 +14,6 @@ function initApp() {
   // Descomente para usar o alternador de tema:
   // import { ThemeToggle } from "./components/ThemeToggle/ThemeToggle.js";
   // document.body.appendChild(ThemeToggle());
-
-  console.log("Aplicacao iniciada com sucesso.");
 }
 
 initApp();
