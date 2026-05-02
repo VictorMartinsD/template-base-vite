@@ -6,6 +6,13 @@ export default [
   {
     ignores: ["node_modules/**", "dist/**", "coverage/**"],
   },
+  {
+    // Permite globals do Node em arquivos de configuração (vite, rollup etc.) para o ESLint não acusar require/module
+    files: ["vite.config.js", "vite.config.*", "**/*.config.js"],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
   js.configs.recommended,
   {
     files: ["**/*.js"],

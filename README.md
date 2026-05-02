@@ -49,6 +49,15 @@ Use `npm run dev` para trabalhar no projeto em tempo real.
 - Status: obrigatório durante o desenvolvimento.
 - Consequência: você vê as mudanças na hora e consegue identificar erros rapidamente.
 
+### 1.2 Validação da versão de produção
+
+Use `npm run preview` depois de gerar a build final para conferir o resultado localmente.
+
+- O que faz: executa uma prévia local da versão de produção.
+- Quando usar: após `npm run build`, antes de entregar ou publicar o projeto.
+- Status: opcional, mas recomendado.
+- Consequência: você valida se a build final está funcionando como esperado no ambiente local.
+
 ### 2. Quando terminar uma funcionalidade
 
 Use este fluxo ao final de uma feature ou tarefa.
@@ -109,6 +118,22 @@ npm run lint:fix
 - `npm install` entra sempre que o projeto precisar sincronizar dependências locais com o `package.json`.
 
 Se quiser usar esse template em outro projeto, mantenha esse fluxo e adapte o README final do projeto novo ao final do desenvolvimento.
+
+## Início rápido ao usar este modelo
+
+- Clone o template e abra o projeto.
+
+```bash
+npm install
+# copie o arquivo de exemplo do ambiente e ajuste os valores se necessário
+cp .env.example .env
+npm run dev
+```
+
+- Observações:
+  - Execute `npm install` após clonar para instalar o ESLint, o Vite e as demais `devDependencies` do template.
+  - Copie `.env.example` para `.env` e ajuste os valores antes de rodar quando o projeto usar variáveis de ambiente.
+  - Use `npm run build` e depois `npm run preview` para validar localmente a versão de produção.
 
 ---
 
