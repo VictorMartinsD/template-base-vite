@@ -1,5 +1,6 @@
 import "./css/index.css";
 import { initTheme } from "./features/theme/theme.js";
+import { loadExpenses, saveExpenses } from "./services/storage.js";
 
 document.documentElement.classList.add("ready");
 
