@@ -12,7 +12,7 @@ async function ensureSprite() {
   if (document.getElementById(SVG_SPRITE_ID)) return;
 
   try {
-    const resp = await fetch("/src/components/ThemeToggle/icons.svg");
+    const resp = await fetch("/src/assets/img/icons.svg");
     const text = await resp.text();
     const div = document.createElement("div");
     div.id = SVG_SPRITE_ID;
@@ -79,7 +79,7 @@ export function ThemeToggle() {
   button.type = "button";
   button.setAttribute("role", "switch");
 
-  const icon = createIcon("#icon-lightbulb");
+  const icon = createIcon(LIGHT_ICON);
   button.appendChild(icon);
 
   button.addEventListener("keydown", (e) => {
