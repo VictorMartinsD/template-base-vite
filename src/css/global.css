@@ -1,4 +1,3 @@
-/* Lógica de Carregamento (FOUC) */
 body {
   background: var(--color-background);
   color: var(--color-text);
@@ -6,9 +5,8 @@ body {
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
-}
 
-body {
+  /* Lógica de Carregamento (FOUC) */
   opacity: 0;
 }
 
