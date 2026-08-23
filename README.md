@@ -14,9 +14,9 @@ Clone o template, configure a identificação do projeto e inicialize o ambiente
 2. Instale as dependências travadas no lockfile e configure o ambiente:
    ```bash
    npm ci
-   cp .env.example .env # copie e ajuste as variáveis de ambiente se precisar
    npm run dev
    ```
+   Se precisar de variáveis locais, copie `.env.example` para `.env` usando o recurso de cópia do seu sistema e ajuste os valores. No PowerShell, por exemplo: `Copy-Item .env.example .env`.
 
 ## Comandos e fluxo
 
