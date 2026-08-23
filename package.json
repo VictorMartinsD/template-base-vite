@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "check": "npm run lint && npm run format",
+    "check": "npm run lint && prettier --check .",
     "format": "prettier --write .",
     "prepare": "husky"
   },
