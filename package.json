@@ -5,20 +5,25 @@
   "author": "Victor Martins Dias <victormartinsjob@gmail.com> (https://github.com/VictorMartinsD)",
   "description": "Breve descrição do projeto",
   "main": "index.html",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+"scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "preview": "npx serve dist",
     "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "check": "npm run lint && prettier --check .",
+    "check": "npm run lint && npm run lint:css && prettier --check .",
     "format": "prettier --write .",
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*.{html,css}": "prettier --write",
+    "**/*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "**/*.html": "prettier --write",
     "**/*.js": [
       "eslint --fix",
       "prettier --write"
