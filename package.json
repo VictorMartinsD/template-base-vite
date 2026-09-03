@@ -10,15 +10,20 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "check": "npm run lint && prettier --check .",
+    "check": "npm run lint && npm run lint:css && prettier --check .",
     "format": "prettier --write .",
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*.{html,css}": "prettier --write",
+    "**/*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "**/*.html": "prettier --write",
     "**/*.js": [
       "eslint --fix",
       "prettier --write"
