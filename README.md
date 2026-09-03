@@ -28,6 +28,7 @@ Clone o template, configure a identificação do projeto e inicialize o ambiente
 | **Verificação JS**  | `npm run lint`               | Ao terminar uma funcionalidade (fim da task)                   | Observa, analisa e avisa sobre inconformidades e erros de lógica no JavaScript   |
 | **Verificação CSS** | `npm run lint:css`           | Ao terminar uma funcionalidade ou estilização                  | Examina os arquivos CSS buscando regras inválidas e maus padrões                 |
 | **Limpeza JS**      | `npx eslint [caminho] --fix` | Fim da task (após o lint básico)                               | Corrige erros de estilo de forma cirúrgica e localizada no arquivo/pasta da task |
+| **Auto-fix CSS**    | `npm run lint:css:fix`       | Fim da task ou ajuste em lote no CSS                           | Corrige automaticamente formatação, hexadecimais e regras estáticas no CSS       |
 | **Commit**          | `git commit`                 | Ao finalizar as mudanças (fim da task)                         | O Husky valida as regras de qualidade automaticamente antes de salvar            |
 | **Build**           | `npm run build`              | Antes de entregar ou publicar                                  | Compila, minifica e otimiza a aplicação na pasta `dist` para produção            |
 | **Preview**         | `npm run preview`            | Após a build, antes de enviar para o ar                        | Abre um servidor local rodando os arquivos da `dist` para validação final        |
@@ -35,7 +36,7 @@ Clone o template, configure a identificação do projeto e inicialize o ambiente
 ## Padronização de Código e Linters
 
 - **ESLint:** Analisa o código JavaScript em busca de erros de sintaxe, lógica e boas práticas.
-- **Stylelint:** Valida e padroniza a estrutura das folhas de estilo CSS (`.stylelintrc.json`).
+- **Stylelint:** Valida e padroniza a estrutura das folhas de estilo CSS (`.stylelintrc.json`). O projeto conta com `.stylelintignore` para evitar checagens em arquivos de build (`dist/`).
 - **Prettier:** Mantém a formatação visual do código consistente sem conflitar com os linters.
 
 ## ⚠️ Boas Práticas e Cuidados Importantes
