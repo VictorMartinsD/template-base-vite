@@ -44,7 +44,8 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-/* Importante: Use class: role="list" no HTML para manter a acessibilidade no Safari e garantir o reset em navegadores legados.*/
+
+/* Importante: Use class: role="list" no HTML para manter a acessibilidade no Safari e garantir o reset em navegadores legados. */
 
 a {
   text-decoration: none;
@@ -61,8 +62,6 @@ select {
 
 /* 7. Evita que textos fiquem muito grandes no mobile e scroll suave */
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
   text-size-adjust: none;
   scroll-behavior: smooth;
 }
